@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <udm.DeploymentPackage version="1.0" application="vprofile-v1">
   <deployables>
-    <jee.Ear name="vprofile-v1" file="vprofile-v1.war" />
+    <jee.War name="vprofile-v1" file="vprofile-v1.war" />
     <file.Folder name="vprofile-v1" file="conf" /> 
     <was.OracleDatasourceSpec name="vprofile-v1">
       <driver>com.mysql.jdbc.Driver</driver>
