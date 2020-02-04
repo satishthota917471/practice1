@@ -11,9 +11,6 @@ variables:
   # Azure Resource Manager connection created during pipeline creation
   azureSubscription: '465d1c12-ad44-48d3-b316-4fc9d1f50d9a'
   
-  # Web app name
-  #webAppName: 'java-maven'
-
   # Environment name
   environmentName: 'dev'
   
@@ -65,5 +62,4 @@ stages:
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
-              #appName: $(webAppName)
               package: '$(Pipeline.Workspace)/drop/**/target/*.?(war|jar)'
