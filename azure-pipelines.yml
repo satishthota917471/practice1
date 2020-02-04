@@ -44,9 +44,7 @@ stages:
 
     steps:
     - task: webappName
-      displayName: $(webAppName)
-      inputs:
-        webAppName: 'java-maven'
+      displayName: 'java-maven'
 
     - upload: $(Build.ArtifactStagingDirectory)
       artifact: drop
